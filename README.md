@@ -39,7 +39,43 @@
 
 ### Linux
 
-根据桌面环境选择 IBus 或 Fcitx5，并选择发行版对应的 DEB 或 RPM。安装完成后请完整注销或重启系统，避免桌面环境继续加载旧进程。
+Linux 版分为两种输入法框架：GNOME 默认通常选择 **IBus**；KDE、Xfce 或已经使用 Fcitx5 的桌面选择 **Fcitx5**。两套前端不要同时安装。
+
+Debian / Ubuntu / Deepin / UOS：
+
+```bash
+# IBus 版
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.24-amd64.deb
+
+# Fcitx5 版
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.24-amd64.deb
+```
+
+Fedora / RHEL 系：
+
+```bash
+# IBus 版
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.24-1.x86_64.rpm
+
+# Fcitx5 版
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.24-1.x86_64.rpm
+```
+
+安装或升级后请**完整重启系统**。重启后，IBus 用户在“设置 → 键盘 → 输入源 → 中文”添加“码圈输入法”；Fcitx5 用户运行 `fcitx5-configtool`，把“码圈输入法”加入当前输入法列表。
+
+卸载：
+
+```bash
+# Debian / Ubuntu，按实际安装版本选择一个
+sudo apt remove maquan-ime-ibus
+sudo apt remove maquan-ime-fcitx5
+
+# Fedora / RHEL，按实际安装版本选择一个
+sudo dnf remove maquan-ime-ibus
+sudo dnf remove maquan-ime-fcitx5
+```
+
+卸载默认保留 `~/.local/share/jdime` 中的个人设置和词库，便于以后重装恢复。
 
 ## 校验下载文件
 
@@ -61,4 +97,3 @@ sha256sum MaQuanIME-*
 
 输入法作者：菰城菜籽  
 联系邮箱：admin@maquan.app
-
