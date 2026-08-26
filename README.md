@@ -9,9 +9,9 @@
 
 | 平台 | 当前版本 | 下载 |
 | --- | --- | --- |
-| Windows | 0.1.25 | [Windows Release](https://github.com/BG5ERH/MaQuanIME/releases/tag/windows-v0.1.25) |
-| Android | 0.1.24 | [Android Release](https://github.com/BG5ERH/MaQuanIME/releases/tag/android-v0.1.24) |
-| Linux | 0.1.24 | [Linux Release](https://github.com/BG5ERH/MaQuanIME/releases/tag/linux-v0.1.24) |
+| Windows | 0.1.27 | [统一正式版](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.27) |
+| Android | 0.1.27 | [统一正式版](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.27) |
+| Linux | 0.1.27 | [统一正式版](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.27) |
 | HarmonyOS | 应用市场发行 | 请在华为应用市场搜索“码圈输入法” |
 | macOS / iOS | 开发中 | 后续开放 |
 
@@ -45,21 +45,32 @@ Debian / Ubuntu / Deepin / UOS：
 
 ```bash
 # IBus 版
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.24-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.27-amd64.deb
 
 # Fcitx5 版
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.24-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.27-amd64.deb
 ```
 
 Fedora / RHEL 系：
 
 ```bash
 # IBus 版
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.24-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.27-1.x86_64.rpm
 
 # Fcitx5 版
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.24-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.27-1.x86_64.rpm
 ```
+
+0.1.27 起安装包会同时安装码圈官方签名公钥与专用软件源。后续版本可随系统更新：
+
+```bash
+sudo apt update && sudo apt upgrade   # Debian / Ubuntu
+sudo dnf upgrade                      # Fedora / RHEL
+```
+
+这不是把 `maquan.app` 整站加入信任。APT 使用独立的 `Signed-By` 公钥，DNF 同时校验 RPM 与仓库
+元数据签名，只接受码圈 Linux 发布密钥签署的包。需要无人值守更新时，可按发行版策略启用
+`unattended-upgrades` 或 `dnf-automatic`。
 
 安装或升级后请**完整重启系统**。重启后，IBus 用户在“设置 → 键盘 → 输入源 → 中文”添加“码圈输入法”；Fcitx5 用户运行 `fcitx5-configtool`，把“码圈输入法”加入当前输入法列表。
 
