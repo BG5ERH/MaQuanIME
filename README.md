@@ -1,111 +1,113 @@
 # 码圈输入法 MaQuanIME
 
-码圈输入法是一款面向 Windows、Android 与 Linux 的中文输入法，统一支持形码、全拼、双拼以及“形码 + 拼音”混合输入。项目以本地优先、跨平台共享学习和可配置输入体验为核心。
+码圈输入法是一款面向 Windows、Android、Linux 与 HarmonyOS 的中文输入法，兼顾形码、拼音、双拼和个人词库。项目使用同一套 Rust 核心统一候选检索、排序、用户学习、码表导入与检字范围规则，各端保留适合自身平台的界面和交互。
 
-官网：[https://maquan.app/](https://maquan.app/)  
-隐私声明：[https://maquan.app/privacy/](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
-## 正式版下载
+当前公开稳定版：
 
-| 平台 | 当前版本 | 下载 |
-| --- | --- | --- |
-| Windows | 0.1.32 | [统一正式版](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.32) |
-| Android | 0.1.32 | [统一正式版](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.32) |
-| Linux | 0.1.32 | [统一正式版](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.32) |
-| HarmonyOS | 应用市场发行 | 请在华为应用市场搜索“码圈输入法” |
-| macOS / iOS | 开发中 | 后续开放 |
+- Windows / Android / Linux：`0.1.35`
+- HarmonyOS：请前往华为应用市场获取
 
-大体积安装包统一放在 GitHub Releases，不直接写入 Git 源码历史。每个 Release 均附带 SHA-256 校验信息。
+## 主要功能
 
-## 主要能力
+- 形码、全拼、双拼，以及形码＋拼音组合输入
+- 五笔 86 极爽 6.0 / 4.3、小泉郑码等内置方案，并支持导入外部方案
+- 全部、GB18030、通用规范汉字三档形码检字范围
+- 个人词库、自造词、调频、固定排序与词频排序
+- 拼音附加词源、Emoji、颜文字和英文 / IT 词库
+- Windows 皮肤编辑、Rime 风格配色、圆角与多字体回退
+- Android / HarmonyOS 全键盘、T9、剪贴板、常用语、光标编辑和多套皮肤
+- Linux 同时提供 IBus 与 Fcitx5，支持 APT / DNF 软件源升级
+- 个人词库同步；输入法核心不上传用户的输入内容
 
-- 形码、全拼、自然码、小鹤等双拼方案与混合输入。
-- 菜籽拼音、本地智能整句、简拼与全拼混输。
-- 多平台共享个人词库、调频与标准拼音学习身份。
-- Windows 码表管理、皮肤设计器与状态栏配置。
-- 形码候选与后续编码提示可选择固定顺序或按词频排序。
-- Android 26 键、T9、全键盘模式、Emoji 与自定义布局。
-- Linux 同时提供 IBus / Fcitx5 的 DEB 与 RPM 安装包。
-- 输入服务本地优先；联网同步和在线资源由用户主动启用。
+## 下载
 
-## 安装提示
+| 平台 | 获取方式 |
+|---|---|
+| Windows | [MaQuanIME 0.1.35 安装程序](https://maquan.app/download) |
+| Android | [官网 APK](https://maquan.app/download) |
+| Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
+| HarmonyOS | 华为应用市场搜索“码圈输入法” |
+| macOS / iOS | 开发中 |
 
-### Windows
+GitHub Releases 只提供普通用户可以直接安装的 Windows、Android APK 与 Linux 软件包。应用市场专用的 AAB、App Pack 和签名材料不会公开上传。
 
-运行 Setup 安装程序。更新或重装后如果系统仍加载旧输入服务，请完整注销或重启 Windows。
+## Linux 安装与卸载
 
-### Android
+Linux 有两个互斥前端：使用 GNOME 等 IBus 桌面环境请选择 IBus；使用 KDE、Fcitx5 桌面环境请选择 Fcitx5。不要同时安装两个前端包。
 
-官网直装版包含在线功能。华为应用市场版按上架要求采用离线功能组合，与官网直装包分开发布。
+### Debian / Ubuntu
 
-### Linux
-
-Linux 版分为两种输入法框架：GNOME 默认通常选择 **IBus**；KDE、Xfce 或已经使用 Fcitx5 的桌面选择 **Fcitx5**。两套前端不要同时安装。
-
-Debian / Ubuntu / Deepin / UOS：
+IBus：
 
 ```bash
-# IBus 版
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.32-amd64.deb
-
-# Fcitx5 版
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.32-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.35-amd64.deb
+sudo reboot
 ```
 
-Fedora / RHEL 系：
+Fcitx5：
 
 ```bash
-# IBus 版
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.32-1.x86_64.rpm
-
-# Fcitx5 版
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.32-1.x86_64.rpm
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.35-amd64.deb
+sudo reboot
 ```
-
-0.1.27 起安装包会同时安装码圈官方签名公钥与专用软件源。后续版本可随系统更新：
-
-```bash
-sudo apt update && sudo apt upgrade   # Debian / Ubuntu
-sudo dnf upgrade                      # Fedora / RHEL
-```
-
-这不是把 `maquan.app` 整站加入信任。APT 使用独立的 `Signed-By` 公钥，DNF 同时校验 RPM 与仓库
-元数据签名，只接受码圈 Linux 发布密钥签署的包。需要无人值守更新时，可按发行版策略启用
-`unattended-upgrades` 或 `dnf-automatic`。
-
-安装或升级后请**完整重启系统**。重启后，IBus 用户在“设置 → 键盘 → 输入源 → 中文”添加“码圈输入法”；Fcitx5 用户运行 `fcitx5-configtool`，把“码圈输入法”加入当前输入法列表。
 
 卸载：
 
 ```bash
-# Debian / Ubuntu，按实际安装版本选择一个
 sudo apt remove maquan-ime-ibus
+# 或
 sudo apt remove maquan-ime-fcitx5
-
-# Fedora / RHEL，按实际安装版本选择一个
-sudo dnf remove maquan-ime-ibus
-sudo dnf remove maquan-ime-fcitx5
+sudo reboot
 ```
 
-卸载默认保留 `~/.local/share/jdime` 中的个人设置和词库，便于以后重装恢复。
+### Fedora / RHEL 系
 
-## 校验下载文件
-
-Windows PowerShell：
-
-```powershell
-Get-FileHash .\MaQuanIME-* -Algorithm SHA256
-```
-
-Linux / macOS：
+IBus：
 
 ```bash
-sha256sum MaQuanIME-*
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.35-1.x86_64.rpm
+sudo reboot
 ```
+
+Fcitx5：
+
+```bash
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.35-1.x86_64.rpm
+sudo reboot
+```
+
+卸载：
+
+```bash
+sudo dnf remove maquan-ime-ibus
+# 或
+sudo dnf remove maquan-ime-fcitx5
+sudo reboot
+```
+
+安装或覆盖更新后必须重启系统；仅卸载再安装但不重启，桌面输入法框架可能继续加载旧进程。
+
+## 开发与质量门禁
+
+代码按共享核心与平台宿主分层：
+
+- `jdime/`：Rust 核心、Windows TSF、设置中心与构建脚本
+- `手机版APP/android/`：Android 输入法与设置界面
+- `手机版APP/harmony/`：HarmonyOS 输入法与设置界面
+- `Linux开发记录/`：IBus、Fcitx5、DEB/RPM 与软件源
+- `maquan-web-v2/`：官网、下载页与更新记录
+
+一次正式发布必须完成核心测试、平台测试、真实安装、输入与设置交互、产物签名/哈希检查，以及公网下载回读。详细流程见 [HANDBOOK.md](HANDBOOK.md)。
+
+## 隐私
+
+码圈输入法的输入服务本身不联网，不上传用户输入内容。官网直装版可按用户主动操作访问在线码表、最新词源与个人词库同步；应用市场离线版不包含网络权限。完整条款见 [隐私声明](https://maquan.app/privacy/)。
 
 ## 反馈
 
-请在 [Issues](https://github.com/BG5ERH/MaQuanIME/issues) 提交可复现的问题，并注明平台、系统版本、码圈输入法版本、输入方案和复现步骤。涉及隐私的数据请先脱敏。
+- 官网社区：[maquan.app/community](https://maquan.app/community)
+- 邮箱：`admin@maquan.app`
 
-输入法作者：菰城菜籽  
-联系邮箱：admin@maquan.app
+Copyright © 码圈输入法。
