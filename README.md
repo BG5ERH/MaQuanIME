@@ -6,7 +6,8 @@
 
 当前公开稳定版：
 
-- Windows / Android / Linux：`0.1.35`
+- Windows / Linux：`0.1.35`
+- Android：`0.1.36`
 - HarmonyOS：请前往华为应用市场获取
 
 ## 主要功能
