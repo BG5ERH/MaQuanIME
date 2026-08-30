@@ -2,3 +2,5 @@ SHA256SUMS text eol=lf
 SHA256SUMS.asc text eol=lf
 SHA256SUMS-0.1.42 text eol=lf
 SHA256SUMS-0.1.42.asc text eol=lf
+SHA256SUMS-* text eol=lf
+SHA256SUMS-*.asc text eol=lf

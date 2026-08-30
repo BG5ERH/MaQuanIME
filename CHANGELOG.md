@@ -2,6 +2,15 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 0.1.43 · 2026-08-30
+
+- 完成共享核心与 Windows、Android、Linux、HarmonyOS 宿主专项审计，四端版本统一为 0.1.43。
+- Android JNI 改用标准 UTF-8，补齐扩展汉字和 Emoji；三 ABI 原生库增加版本戳和摘要门禁。
+- Linux IBus/Fcitx5 增加运行时核心 ABI 自检，DEB/RPM 打包阶段再次校验实际共享库。
+- HarmonyOS 异步打开拼音会话时在工作线程内带回错误原因；移动端错误缓冲按需扩容。
+- Windows 修复超长模块路径被静默截断的注册风险，并完成 x64/x86 安装与注册验证。
+- 共享核心全量测试、Clippy 零警告和正式词库性能门禁通过；逐键平均低于 1 ms。
+
 ## 0.1.42 · 2026-08-30
 
 - 修复 Windows TSF 快速启动时热词小表与完整 JDX 切换时序不确定，导致同一编码跨会话候选不一致的问题。
