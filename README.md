@@ -6,8 +6,7 @@
 
 当前公开稳定版：
 
-- Windows / Linux：`0.1.35`
-- Android：`0.1.36`
+- Windows / Android / Linux：`0.1.37`
 - HarmonyOS：请前往华为应用市场获取
 
 ## 主要功能
@@ -17,6 +16,7 @@
 - 全部、GB18030、通用规范汉字三档形码检字范围
 - 个人词库、自造词、调频、固定排序与词频排序
 - 拼音附加词源、Emoji、颜文字和英文 / IT 词库
+- 可关闭、可校验、失败自动回退的社区实验本地 AI 基座
 - Windows 皮肤编辑、Rime 风格配色、圆角与多字体回退
 - Android / HarmonyOS 全键盘、T9、剪贴板、常用语、光标编辑和多套皮肤
 - Linux 同时提供 IBus 与 Fcitx5，支持 APT / DNF 软件源升级
@@ -26,7 +26,7 @@
 
 | 平台 | 获取方式 |
 |---|---|
-| Windows | [MaQuanIME 0.1.35 安装程序](https://maquan.app/download) |
+| Windows | [MaQuanIME 0.1.37 安装程序](https://maquan.app/download) |
 | Android | [官网 APK](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
 | HarmonyOS | 华为应用市场搜索“码圈输入法” |
@@ -43,14 +43,14 @@ Linux 有两个互斥前端：使用 GNOME 等 IBus 桌面环境请选择 IBus�
 IBus：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.35-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.37-amd64.deb
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.35-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.37-amd64.deb
 sudo reboot
 ```
 
@@ -68,14 +68,14 @@ sudo reboot
 IBus：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.35-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.37-1.x86_64.rpm
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.35-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.37-1.x86_64.rpm
 sudo reboot
 ```
 
