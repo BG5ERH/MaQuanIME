@@ -2,6 +2,14 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 0.1.38 · 2026-08-30
+
+- Android 与 HarmonyOS 个人词库在进入页面、提交搜索或主动刷新时读取最新落盘数据。
+- Windows 词库管理新增按词条或编码搜索，并修复应用设置后搜索按钮偶发无响应。
+- 共享拼音解码修复低频精确短词无法继续组成长词的问题，真实词库已回归“青鳉鱼”。
+- Windows、Android、Linux 与 HarmonyOS 从同一份共享核心全量重建；Debian 13 与 Fedora 44 的 IBus/Fcitx5 均完成真实输入测试。
+- 交流反馈可加入 QQ 群：`304771624`。
+
 ## 0.1.37 · 2026-08-30
 
 - 接入可校验、可关闭、可自动回退的 `compact-v2-lccc-20260829-r1` 社区实验 AI 基座。
