@@ -2,6 +2,14 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 0.1.52 · 2026-09-01
+
+- 共享 Rust 核心新增只对官方三码郑码生效的专用物理键映射，普通形码表标点语义不受影响。
+- 兼容三码郑码 `v.`、空格与斜杠起始的短码/词组规则；移动端可用无缺淡灰 30 键皮肤直接输入相关物理键。
+- Android 与 HarmonyOS 离线目录更新为 25 张逐表校验码表，包含三码郑码。
+- Windows、Android、Linux 与 HarmonyOS 使用同一份 0.1.52 / ABI 14 核心重建。
+- 通过 Windows 签名安装与注册、Android 冷启动与 20 轮面板唤起、Debian/Fedora 真实输入和 HarmonyOS 发布签名模拟器回归。
+
 ## 0.1.51 · 2026-09-01
 
 - Android 与 HarmonyOS 新增“无缺淡灰”皮肤，在极致淡灰风格中固定提供独立 `; , . /` 键。
