@@ -2,11 +2,12 @@
 
 码圈输入法是一款面向 Windows、Android、Linux 与 HarmonyOS 的中文输入法，兼顾形码、拼音、双拼和个人词库。项目使用同一套 Rust 核心统一候选检索、排序、用户学习、码表导入与检字范围规则，各端保留适合自身平台的界面和交互。
 
-[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.49](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.49) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.50](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.50) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
 当前公开稳定版：
 
-- Windows / Android / Linux：`0.1.49`
+- Windows / Linux：`0.1.49`
+- Android：`0.1.50`
 - HarmonyOS：请前往华为应用市场获取
 
 ## 主要功能
@@ -27,7 +28,7 @@
 | 平台 | 获取方式 |
 |---|---|
 | Windows | [MaQuanIME 0.1.49 安装程序](https://maquan.app/download) |
-| Android | [官网 APK 0.1.49](https://maquan.app/download) |
+| Android | [官网 APK 0.1.50](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
 | HarmonyOS | 华为应用市场搜索“码圈输入法” |
 | macOS / iOS | 开发中 |
