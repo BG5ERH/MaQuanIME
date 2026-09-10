@@ -2,6 +2,14 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 0.1.79 · 2026-09-10
+
+Windows / Android / Linux 正式发布。
+
+- 辅助码只打一码时，再按一次引导键即可收尾并继续连打；两码辅助定字保持原有用法。
+- 已保存的个人词在最后一个音节未打完时也可召回：例如自然码 `qmwzb`、全拼 `qianweib` 可以找到已保存的「钱伟斌」。
+- 官网新增[自动造词与个人词库使用说明](https://maquan.app/guide/auto-phrase-and-personal-dictionary)，说明临时词、确认次数与永久保存的区别；普通组词行为保持不变。
+
 ## 0.1.78 · 2026-09-09
 
 四端同版。HarmonyOS 通过华为应用市场发行。
