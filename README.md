@@ -2,16 +2,15 @@
 
 码圈输入法是一款面向 Windows、Android、Linux 与 HarmonyOS 的中文输入法，兼顾形码、拼音、双拼和个人词库。项目使用同一套 Rust 核心统一候选检索、排序、用户学习、码表导入与检字范围规则，各端保留适合自身平台的界面和交互。
 
-[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.79](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.79) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.80](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.80) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
 当前公开稳定版：
 
-- Windows / Android / Linux：`0.1.79`
-- HarmonyOS：请前往华为应用市场获取
+- Windows / Android / Linux / HarmonyOS：`0.1.80`
 
 ## 本次更新
 
-辅助码一码后可再按引导键收尾并继续连打；个人词在末音节尚未打完时也能找到。
+形码整句新增「全识别」与「两码」两种模式，默认选择全识别：每字可以混用 2、3、4 码，编码栏按当前首选候选的实际边界分割显示，原有码表词组和自定义词组也参与。Linux 补齐双拼辅助码设置、引导键和自定义码表导入。
 
 新增[自动造词与个人词库使用说明](https://maquan.app/guide/auto-phrase-and-personal-dictionary)：一次形成临时词，达到确认次数才永久保存。
 
@@ -22,7 +21,7 @@
 - 全部、GB18030、通用规范汉字三档形码检字范围
 - 个人词库、自造词、调频、固定排序与词频排序
 - 本地 AI 候选预测：一口气打完整句再看候选，判断全在本机完成
-- 形码智能整句（实验）：每字只打前两码即可连打整句，打满全码仍然出那个字
+- 形码智能整句（实验）：全识别支持 2 / 3 / 4 码混合连打；两码模式保留每字前两码连打，编码按识别边界分组显示
 - 拼音附加词源、Emoji、颜文字和英文 / IT 词库
 - Windows 皮肤编辑、Rime 风格配色、圆角与多字体回退
 - Android / HarmonyOS 全键盘、T9、剪贴板、常用语、光标编辑和多套皮肤
@@ -36,13 +35,13 @@
 
 | 平台 | 获取方式 |
 |---|---|
-| Windows | [MaQuanIME 0.1.79 安装程序](https://maquan.app/download) |
-| Android | [官网 APK 0.1.79](https://maquan.app/download) |
+| Windows | [MaQuanIME 0.1.80 安装程序](https://maquan.app/download) |
+| Android | [官网 APK 0.1.80](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
-| HarmonyOS | 华为应用市场搜索“码圈输入法” |
+| HarmonyOS | [0.1.80 在线正式签名 HAP](https://maquan.app/download)，安装受设备及签名授权范围限制；也可关注华为应用市场 |
 | macOS / iOS | 开发中 |
 
-GitHub Releases 只提供普通用户可以直接安装的 Windows、Android APK 与 Linux 软件包。应用市场专用的 AAB、App Pack 和签名材料不会公开上传。
+GitHub Releases 提供 Windows、Android APK、Linux 软件包与 HarmonyOS 在线正式签名 HAP。HAP 是否可安装取决于设备及签名授权，不保证所有设备均可直接侧载。应用市场专用的 AAB、App Pack 和签名材料不会公开上传。
 
 ## Linux 安装与卸载
 
@@ -53,14 +52,14 @@ Linux 有两个互斥前端：使用 GNOME 等 IBus 桌面环境请选择 IBus�
 IBus：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.79-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.80-amd64.deb
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.79-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.80-amd64.deb
 sudo reboot
 ```
 
@@ -78,14 +77,14 @@ sudo reboot
 IBus：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.79-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.80-1.x86_64.rpm
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.79-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.80-1.x86_64.rpm
 sudo reboot
 ```
 
