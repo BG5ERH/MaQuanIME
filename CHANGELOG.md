@@ -2,6 +2,14 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 0.1.81 · 2026-09-11
+
+Windows / Android / Linux / HarmonyOS 正式包同步更新。
+
+- 修复双拼自造词半码补全遗漏的平翘舌过滤，z/c/s 不再错误匹配 zh/ch/sh。
+- 自然码 `xmz` 不再把「鲜制」提到「现在」前面；`xmv` 等正确翘舌键仍能找到个人词，全拼用法不变。
+- 保留整句双模式、编码分割、自定义词组及辅助码功能，模型和模型信息未改。
+
 ## 0.1.80 · 2026-09-11
 
 Windows / Android / Linux / HarmonyOS 正式包同步更新。

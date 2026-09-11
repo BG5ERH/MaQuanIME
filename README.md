@@ -2,15 +2,15 @@
 
 码圈输入法是一款面向 Windows、Android、Linux 与 HarmonyOS 的中文输入法，兼顾形码、拼音、双拼和个人词库。项目使用同一套 Rust 核心统一候选检索、排序、用户学习、码表导入与检字范围规则，各端保留适合自身平台的界面和交互。
 
-[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.80](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.80) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.81](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.81) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
 当前公开稳定版：
 
-- Windows / Android / Linux / HarmonyOS：`0.1.80`
+- Windows / Android / Linux / HarmonyOS：`0.1.81`
 
 ## 本次更新
 
-形码整句新增「全识别」与「两码」两种模式，默认选择全识别：每字可以混用 2、3、4 码，编码栏按当前首选候选的实际边界分割显示，原有码表词组和自定义词组也参与。Linux 补齐双拼辅助码设置、引导键和自定义码表导入。
+修复双拼自造词半码补全的平翘舌混入：自然码输入 `xmz` 不再把「鲜制」提到「现在」前面，`xmv` 仍能找到「鲜制」。z/c/s 与 zh/ch/sh 的区分对个人词同样生效，全拼用法不变。形码整句双模式、编码分割和 Linux 辅助码功能保持。
 
 新增[自动造词与个人词库使用说明](https://maquan.app/guide/auto-phrase-and-personal-dictionary)：一次形成临时词，达到确认次数才永久保存。
 
@@ -35,10 +35,10 @@
 
 | 平台 | 获取方式 |
 |---|---|
-| Windows | [MaQuanIME 0.1.80 安装程序](https://maquan.app/download) |
-| Android | [官网 APK 0.1.80](https://maquan.app/download) |
+| Windows | [MaQuanIME 0.1.81 安装程序](https://maquan.app/download) |
+| Android | [官网 APK 0.1.81](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
-| HarmonyOS | [0.1.80 在线正式签名 HAP](https://maquan.app/download)，安装受设备及签名授权范围限制；也可关注华为应用市场 |
+| HarmonyOS | [0.1.81 在线正式签名 HAP](https://maquan.app/download)，安装受设备及签名授权范围限制；也可关注华为应用市场 |
 | macOS / iOS | 开发中 |
 
 GitHub Releases 提供 Windows、Android APK、Linux 软件包与 HarmonyOS 在线正式签名 HAP。HAP 是否可安装取决于设备及签名授权，不保证所有设备均可直接侧载。应用市场专用的 AAB、App Pack 和签名材料不会公开上传。
@@ -52,14 +52,14 @@ Linux 有两个互斥前端：使用 GNOME 等 IBus 桌面环境请选择 IBus�
 IBus：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.80-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.81-amd64.deb
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.80-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.81-amd64.deb
 sudo reboot
 ```
 
@@ -77,14 +77,14 @@ sudo reboot
 IBus：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.80-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.81-1.x86_64.rpm
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.80-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.81-1.x86_64.rpm
 sudo reboot
 ```
 
