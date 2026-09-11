@@ -2,6 +2,14 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 0.1.82 · 2026-09-11
+
+Windows / Linux / HarmonyOS 正式版；Android 保持 0.1.81。
+
+- Windows 修复冷热词库切换导致已调频整句候选缺失的问题。
+- 桌面方案管理补齐码表导入、方案改名、选用和自定义双拼设计器。
+- 鸿蒙提供新在线正式签名包；模型文件和模型信息不变。
+
 ## 0.1.81 · 2026-09-11
 
 Windows / Android / Linux / HarmonyOS 正式包同步更新。
