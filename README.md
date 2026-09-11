@@ -2,16 +2,17 @@
 
 码圈输入法是一款面向 Windows、Android、Linux 与 HarmonyOS 的中文输入法，兼顾形码、拼音、双拼和个人词库。项目使用同一套 Rust 核心统一候选检索、排序、用户学习、码表导入与检字范围规则，各端保留适合自身平台的界面和交互。
 
-[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.82](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.82) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.83](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.83) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
 当前公开稳定版：
 
-- Windows / Linux / HarmonyOS：`0.1.82`
-- Android：`0.1.81`（本轮不变）
+- Windows / Android / Linux / HarmonyOS：`0.1.83`
 
 ## 本次更新
 
-修复 Windows 冷热词库切换导致已调频整句候选缺失的问题。Windows / Linux 补齐方案管理、手动导入码表、改名和自定义双拼名称编辑；鸿蒙同步提供 0.1.82 在线正式包。Android 本轮仍为 0.1.81。模型及模型信息保持不变。
+四端新增首道双拼、首右2.0（20,897字）及首右plus（8,070字）。整句输入可以中途加入普通标点，继续输入后统一上屏；逗号选词、辅助码引导等特殊功能仍优先。首右2.0采用最终修正版，䓛=cs。模型及模型信息保持不变。
+
+双拼若把逗号设为辅助码引导符，音节后的逗号仍进入辅助码；想用逗号分句，可把辅助码引导符改为斜杠 `/`。详见[整句输入说明](https://maquan.app/guide/smart-sentence-and-local-ai)。
 
 新增[自动造词与个人词库使用说明](https://maquan.app/guide/auto-phrase-and-personal-dictionary)：一次形成临时词，达到确认次数才永久保存。
 
@@ -36,10 +37,10 @@
 
 | 平台 | 获取方式 |
 |---|---|
-| Windows | [MaQuanIME 0.1.82 安装程序](https://maquan.app/download) |
-| Android | [官网 APK 0.1.81](https://maquan.app/download) |
+| Windows | [MaQuanIME 0.1.83 安装程序](https://maquan.app/download) |
+| Android | [官网 APK 0.1.83](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
-| HarmonyOS | [0.1.82 在线正式签名 HAP](https://maquan.app/download)，安装受设备及签名授权范围限制；也可关注华为应用市场 |
+| HarmonyOS | [0.1.83 在线正式签名 HAP](https://maquan.app/download)，安装受设备及签名授权范围限制；也可关注华为应用市场 |
 | macOS / iOS | 开发中 |
 
 GitHub Releases 提供 Windows、Android APK、Linux 软件包与 HarmonyOS 在线正式签名 HAP。HAP 是否可安装取决于设备及签名授权，不保证所有设备均可直接侧载。应用市场专用的 AAB、App Pack 和签名材料不会公开上传。
@@ -53,14 +54,14 @@ Linux 有两个互斥前端：使用 GNOME 等 IBus 桌面环境请选择 IBus�
 IBus：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.82-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.83-amd64.deb
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.82-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.83-amd64.deb
 sudo reboot
 ```
 
@@ -78,14 +79,14 @@ sudo reboot
 IBus：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.82-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.83-1.x86_64.rpm
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.82-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.83-1.x86_64.rpm
 sudo reboot
 ```
 
