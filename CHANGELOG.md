@@ -2,6 +2,16 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 0.1.80 · 2026-09-11
+
+Windows / Android / Linux / HarmonyOS 正式包同步更新。
+
+- 形码整句分为全识别与两码模式；默认选择全识别，支持每字混用 2、3、4 码。
+- 编码栏显示实际识别分割；支持原有码表词组和自定义词组参与整句。
+- Linux 补齐双拼辅助码开关、内置方案、引导键及自定义 TSV 码表导入。
+- Android 中英文副字符分别编辑、统一导入导出恢复；长整句候选自动换行。
+- 模型及模型信息保持原样。本次为正式 Release 构建，版本统一为 0.1.80。
+
 ## 0.1.79 · 2026-09-10
 
 Windows / Android / Linux 正式发布。
