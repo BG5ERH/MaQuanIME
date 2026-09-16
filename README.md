@@ -2,19 +2,19 @@
 
 码圈输入法是一款面向 Windows、Android、Linux 与 HarmonyOS 的中文输入法，兼顾形码、拼音、双拼和个人词库。项目使用同一套 Rust 核心统一候选检索、排序、用户学习、码表导入与检字范围规则，各端保留适合自身平台的界面和交互。
 
-[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.84](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.84) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.85](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.85) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
 当前公开稳定版：
 
-- Windows / Android / Linux / HarmonyOS：`0.1.84`
+- Windows / Android / Linux / HarmonyOS：`0.1.85`
 
 ## 本次更新
 
-四端同步直接辅助码、词组联想和整句性能优化。双拼可选择直接或间接辅助码；直接模式每字自由补 0、1 或 2 位辅助码，自造词及简码参与识别。词组联想在上屏后显示后续文字，拼音、形码独立开关，默认关闭。
+Android 与 HarmonyOS 补齐形码自造词：连续选字组成的词可以自动留下，下次直接打出来，四种模式，默认关闭，在「学习与造词」里开启；桌面端原有行为不变。Windows 候选词右键可以置顶或直接移到第几位，鼠标拖动在个别聊天软件里会被接管，右键不受影响。
 
-优化全拼、双拼和形码的整句查询、冷启动及缓存复用；鸿蒙调整面板和输入会话生命周期。保留快符、个人词库按方案导入导出、首道双拼、首右辅助码与整句标点等功能，模型及模型信息不变。
+移动端「词库管理」统一改名为「学习与造词」，先选拼音或形码再显示对应设置。HarmonyOS 主题外观各组默认收起，避免左右滑动误碰滑动条。Windows 安装包体积从约 200 MB 减少到约 86 MB，随包词库、模型与全部功能不变。
 
-详见[本版说明](release-notes/RELEASE_NOTES_0.1.84.md)、[整句输入说明](https://maquan.app/guide/smart-sentence-and-local-ai)和[个人词库说明](https://maquan.app/guide/auto-phrase-and-personal-dictionary)。
+详见[本版说明](release-notes/RELEASE_NOTES_0.1.85.md)、[整句输入说明](https://maquan.app/guide/smart-sentence-and-local-ai)和[个人词库说明](https://maquan.app/guide/auto-phrase-and-personal-dictionary)。
 
 ## 主要功能
 
@@ -37,13 +37,13 @@
 
 | 平台 | 获取方式 |
 |---|---|
-| Windows | [MaQuanIME 0.1.84 安装程序](https://maquan.app/download) |
-| Android | [官网 APK 0.1.84](https://maquan.app/download) |
+| Windows | [MaQuanIME 0.1.85 安装程序](https://maquan.app/download) |
+| Android | [官网 APK 0.1.85](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
-| HarmonyOS | [0.1.84 在线正式签名 HAP](https://maquan.app/download)，安装受设备及签名授权范围限制；也可关注华为应用市场 |
+| HarmonyOS | 通过华为应用市场安装；官网与本页不再提供 HAP 下载 —— 鸿蒙生产设备只接受应用市场那条分发链，别处拿到的包会提示来源不可信 |
 | macOS / iOS | 开发中 |
 
-GitHub Releases 提供 Windows、Android APK、Linux 软件包与 HarmonyOS 在线正式签名 HAP。HAP 是否可安装取决于设备及签名授权，不保证所有设备均可直接侧载。应用市场专用的 AAB、App Pack 和签名材料不会公开上传。
+GitHub Releases 提供 Windows 安装程序、Android APK 与 Linux 软件包（含 GPG 签名与校验文件）。HarmonyOS 走华为应用市场，不在此处提供安装包；应用市场专用的 AAB、App Pack 和签名材料同样不会公开上传。
 
 ## Linux 安装与卸载
 
@@ -54,14 +54,14 @@ Linux 有两个互斥前端：使用 GNOME 等 IBus 桌面环境请选择 IBus�
 IBus：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.84-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.85-amd64.deb
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.84-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.85-amd64.deb
 sudo reboot
 ```
 
@@ -79,14 +79,14 @@ sudo reboot
 IBus：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.84-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.85-1.x86_64.rpm
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.84-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.85-1.x86_64.rpm
 sudo reboot
 ```
 
