@@ -2,6 +2,17 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 0.1.86 · 2026-09-23
+
+- 改善形码完整字词首选稳定性，保留原码简码与个人词序，不设 8 码硬分界。
+- Windows/Linux 新增 Ctrl+1 辅助码、Ctrl+2 形码模式菜单，可数字快选并自定义快捷键。
+- 修复 Windows Alt+Z 反查；候选设置补形码／拼音数量入口，「常用词组排前面」改称「词组自动调频」。
+- 手机自定义上滑文字按原文输出，修正方案列表边框和导入龙码方案标识。
+- Linux 分 Fcitx4 DEB、Fcitx5/IBus DEB/RPM，补统一检测安装脚本、国产系统对照与安装专文。
+- 发布 MaQuanTableTool 0.1.0 Windows x64 便携码表诊断、修复、转换工具。
+- 官网更新记录默认 10 条，点击浏览更多；新增[详细操作说明](https://maquan.app/guide/whats-new-0-1-86)。
+- HarmonyOS 市场包已准备，实际更新以审核上架为准；不公开 APP/HAP 直装附件。
+
 ## 0.1.85 · 2026-09-16
 
 - Android、HarmonyOS 补齐形码自造词：连续选字组成的词可以自动留下，四种模式，默认关闭，在「学习与造词」里开启。桌面端原有行为不变。
