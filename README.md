@@ -2,20 +2,20 @@
 
 码圈输入法是一款面向 Windows、Android、Linux 与 HarmonyOS 的中文输入法，兼顾形码、拼音、双拼和个人词库。项目使用同一套 Rust 核心统一候选检索、排序、用户学习、码表导入与检字范围规则，各端保留适合自身平台的界面和交互。
 
-[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.86](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.86) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.87](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.87) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
 当前公开稳定版：
 
-- Windows / Android / Linux：`0.1.86`；HarmonyOS 开发发行版同为 `0.1.86`，应用市场实际更新以审核上架为准。
+- Windows / Android / Linux：`0.1.87`；HarmonyOS 开发发行版同为 `0.1.87`，应用市场实际更新以审核上架为准。
 - MaQuanTableTool 码表工具：独立版本 `0.1.0`，Windows x64 便携程序。
 
 ## 本次更新
 
-改善形码完整字词的首选稳定性，不设超过 8 码才算句子的硬分界。Windows/Linux 新增 Ctrl+1 辅助码菜单、Ctrl+2 形码模式菜单，支持数字快选和改键；修复 Windows Alt+Z 反查。
+**丙午年-中秋特别版 v0.1.87**。月圆人团圆，打字更顺手，祝大家中秋快乐！
 
-手机自定义上滑文字按原文输出，中文状态也能设置英文 . 或 .com。Linux 下载明确区分 Fcitx4、Fcitx5 和 IBus；一个安装脚本支持自动检测或指定框架。另提供码表检查、修复与 .mb 转换工具。
+桌面端完善编码中途编辑、候选框定位与设置窗口；Windows 修复 Ctrl+Space 中英文切换和英文标点顶字。手机支持连续长句反查，逐字编码单独换行显示，展开后可滚动查看。Linux 改进安装保护与码表导入，仍按 Fcitx4、Fcitx5、IBus 分包。
 
-详见[本版说明](release-notes/RELEASE_NOTES_0.1.86.md)、[详细操作说明](https://maquan.app/guide/whats-new-0-1-86)、[国产 Linux 安装](https://maquan.app/guide/linux-domestic-install)和[码表工具说明](https://maquan.app/guide/table-tool)。
+详见[本版说明](release-notes/RELEASE_NOTES_0.1.87.md)、[完整使用说明](https://maquan.app/guide)、[国产 Linux 安装](https://maquan.app/guide/linux-domestic-install)和[码表工具说明](https://maquan.app/guide/table-tool)。
 
 ## 主要功能
 
@@ -38,8 +38,8 @@
 
 | 平台 | 获取方式 |
 |---|---|
-| Windows | [MaQuanIME 0.1.86 安装程序](https://maquan.app/download) |
-| Android | [官网 APK 0.1.86](https://maquan.app/download) |
+| Windows | [MaQuanIME 0.1.87 安装程序](https://maquan.app/download) |
+| Android | [官网 APK 0.1.87](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
 | HarmonyOS | 通过华为应用市场安装；官网与本页不再提供 HAP 下载 —— 鸿蒙生产设备只接受应用市场那条分发链，别处拿到的包会提示来源不可信 |
 | macOS / iOS | 开发中 |
@@ -65,21 +65,21 @@ bash install-maquan-linux.sh
 Fcitx4：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx4-0.1.86-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx4-0.1.87-amd64.deb
 sudo reboot
 ```
 
 IBus：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.86-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.87-amd64.deb
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.86-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.87-amd64.deb
 sudo reboot
 ```
 
@@ -99,14 +99,14 @@ sudo reboot
 IBus：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.86-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.87-1.x86_64.rpm
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.86-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.87-1.x86_64.rpm
 sudo reboot
 ```
 
