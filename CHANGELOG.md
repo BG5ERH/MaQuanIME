@@ -2,6 +2,12 @@
 
 完整在线版本记录：[https://maquan.app/changelog](https://maquan.app/changelog)
 
+## 丙午年-国庆特别版 v0.1.90 · 2026-09-30
+
+词库更新。
+
+详见[本版说明](release-notes/RELEASE_NOTES_0.1.90.md)。
+
 ## 丙午年-国庆特别版 v0.1.89 · 2026-09-30
 
 欢度国庆，整句更准，祝大家国庆快乐！
