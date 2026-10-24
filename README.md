@@ -1,6 +1,6 @@
 # 码圈输入法 MaQuanIME
 
-码圈输入法是一款面向 Windows、Android、Linux 与 HarmonyOS 的中文输入法，兼顾形码、拼音、双拼和个人词库。项目使用同一套 Rust 核心统一候选检索、排序、用户学习、码表导入与检字范围规则，各端保留适合自身平台的界面和交互。
+码圈输入法是一款免费的中文输入法，支持 Windows、Android、Linux 与 HarmonyOS，提供拼音、双拼、形码、个人词库，以及按需开启的 AI 功能。
 
 [官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.95](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.95) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
@@ -11,7 +11,14 @@
 
 ## 本次更新
 
-**码圈输入法 v0.1.95**。新增 AI 写作、快速润色与预测、词库分类和高级剪贴板，完善官方同步、手机键盘和皮肤使用。
+**码圈输入法 v0.1.95**。新增 AI 润色、AI 问答、AI 预测和高级剪贴板，鸿蒙开放在线更新与同步功能。
+
+- **AI 润色**：一键优化已经写好的文字，也能按自己的要求改写、扩写。
+- **AI 问答**：在输入法里直接提问、获取答案，还可以继续追问。
+- **高级剪贴板**：保存复制记录和常用语，需要时直接选择使用。
+- **鸿蒙在线功能开放**：支持在线更新码表和词源、账号同步、云端皮肤，以及 AI 润色和问答。
+- **AI 预测**：输入时提供表达建议，选中即可使用。
+- **词库分类**：按分类整理个人词库，常用词更容易找到。
 
 详见[本版说明](release-notes/RELEASE_NOTES_0.1.95.md)与[0.1.95 使用帮助](https://maquan.app/guide/whats-new-0-1-95)。
 
