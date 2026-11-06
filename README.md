@@ -2,23 +2,23 @@
 
 码圈输入法是一款免费的中文输入法，支持 Windows、Android、Linux 与 HarmonyOS，提供拼音、双拼、形码、个人词库，以及按需开启的 AI 功能。
 
-[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.96](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.96) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.97](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.97) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
 当前公开稳定版：
 
-- Windows / Android / Linux：`0.1.96`；HarmonyOS 通过华为应用市场更新，以实际上架版本为准。
+- Windows / Android / Linux：`0.1.97`；HarmonyOS 通过华为应用市场更新，以实际上架版本为准。
 - MaQuanTableTool 码表工具：独立版本 `0.1.0`，Windows x64 便携程序。
 
 ## 本次更新
 
-**码圈输入法 v0.1.96**。形码整句 AI 预测与桌面词库管理升级，支持拆分学习和自定义日期时间输入。
+**码圈输入法 v0.1.97**。手机输入与跨端备份升级，AI 候选预测更贴合输入习惯。
 
-- **形码整句 AI 预测**：在输入过程中提供语句建议，辅助完成日常文字表达。
-- **Windows 词库管理**：支持批量分类、按分类导入与独立窗口，集中整理个人词库和自定义编码。
-- **拆分学习**：为自选形码方案导入拆分文件，在候选中查看字根，辅助学习和记忆编码。
-- **自定义日期时间输入**：为常用日期和时间格式设置专属编码，快速输入所需内容。
+- **滑动光标**：开启后通过滑动移动编码光标，方便修改正在输入的内容。
+- **快捷下滑输入**：开启后下滑输入大写字母或英文标点，让手机输入更加顺手。
+- **AI 候选预测**：根据输入节奏调整预测时机，获得更贴合使用习惯的候选建议。
+- **鸿蒙备份与恢复**：导出和导入设置与个人词库，并与 Android 版互通。
 
-详见[本版说明](release-notes/RELEASE_NOTES_0.1.96.md)与[0.1.96 使用指南](https://maquan.app/guide/whats-new-0-1-96)。
+详见[本版说明](release-notes/RELEASE_NOTES_0.1.97.md)与[0.1.97 使用指南](https://maquan.app/guide/whats-new-0-1-97)。
 
 ## 主要功能
 
@@ -41,8 +41,8 @@
 
 | 平台 | 获取方式 |
 |---|---|
-| Windows | [MaQuanIME 0.1.96 安装程序](https://maquan.app/download) |
-| Android | [官网 APK 0.1.96](https://maquan.app/download) |
+| Windows | [MaQuanIME 0.1.97 安装程序](https://maquan.app/download) |
+| Android | [官网 APK 0.1.97](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
 | HarmonyOS | 通过华为应用市场安装；官网与本页不再提供 HAP 下载 —— 鸿蒙生产设备只接受应用市场那条分发链，别处拿到的包会提示来源不可信 |
 | macOS / iOS | 开发中 |
@@ -68,21 +68,21 @@ bash install-maquan-linux.sh
 Fcitx4：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx4-0.1.96-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx4-0.1.97-amd64.deb
 sudo reboot
 ```
 
 IBus：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.96-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.97-amd64.deb
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.96-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.97-amd64.deb
 sudo reboot
 ```
 
@@ -102,14 +102,14 @@ sudo reboot
 IBus：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.96-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.97-1.x86_64.rpm
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.96-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.97-1.x86_64.rpm
 sudo reboot
 ```
 
