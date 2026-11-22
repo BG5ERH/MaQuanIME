@@ -2,23 +2,28 @@
 
 码圈输入法是一款免费的中文输入法，支持 Windows、Android、Linux 与 HarmonyOS，提供拼音、双拼、形码、个人词库，以及按需开启的 AI 功能。
 
-[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.97](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.97) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
+[官方网站](https://maquan.app/) · [下载页面](https://maquan.app/download) · [GitHub Release 0.1.98](https://github.com/BG5ERH/MaQuanIME/releases/tag/v0.1.98) · [使用说明](https://maquan.app/guide) · [更新记录](https://maquan.app/changelog) · [隐私声明](https://maquan.app/privacy/)
 
 当前公开稳定版：
 
-- Windows / Android / Linux：`0.1.97`；HarmonyOS 通过华为应用市场更新，以实际上架版本为准。
+- Windows / Android / Linux：`0.1.98`；HarmonyOS 通过华为应用市场更新，以实际上架版本为准。
 - MaQuanTableTool 码表工具：独立版本 `0.1.0`，Windows x64 便携程序。
 
 ## 本次更新
 
-**码圈输入法 v0.1.97**。手机输入与跨端备份升级，AI 候选预测更贴合输入习惯。
+**码圈输入法 v0.1.98**。皮肤工坊开放皮肤市场，手机修改编码更直接，形码组词支持郑码与仓颉规则。
 
-- **滑动光标**：开启后通过滑动移动编码光标，方便修改正在输入的内容。
-- **快捷下滑输入**：开启后下滑输入大写字母或英文标点，让手机输入更加顺手。
-- **AI 候选预测**：根据输入节奏调整预测时机，获得更贴合使用习惯的候选建议。
-- **鸿蒙备份与恢复**：导出和导入设置与个人词库，并与 Android 版互通。
+- **皮肤市场**：在官网皮肤工坊发布自己的皮肤，浏览、预览大家分享的作品，一键使用或存到「我的皮肤」同步到手机。
+- **皮肤工坊**：一键添加按键，按主色或背景图自动配色，单键样式可批量应用，用手机打开也能边调边看；自定义标点键可随中英文切换。
+- **编码点选**：开启滑动光标后，点按或拖动候选栏里的编码即可移动光标，修改编码更直接。
+- **万方皮肤**：五行键区，首行集中上档、光标移动、撤销重做与退格，常用编辑一键可达。
+- **激活输入法快捷键**：在 Windows 上按 Ctrl+F12 即可从其他输入法切换到码圈，按键组合可以自定义。
+- **形码组词**：郑码、仓颉等方案按各自的构词规则自动组词，导入的码表同样适用。
+- **Windows 多账号**：同一台电脑上的每个 Windows 账号各自使用独立的个人词库与设置，互不影响。
+- **隐私输入保护**：在密码框、浏览器无痕模式等私密输入场景中，不学习输入内容，也不记录剪贴板。
+- **退格手势**：退格键上滑只删除光标前的文字，随后下滑即可找回刚删掉的内容。
 
-详见[本版说明](release-notes/RELEASE_NOTES_0.1.97.md)与[0.1.97 使用指南](https://maquan.app/guide/whats-new-0-1-97)。
+详见[本版说明](release-notes/RELEASE_NOTES_0.1.98.md)与[0.1.98 使用指南](https://maquan.app/guide/whats-new-0-1-98)。
 
 ## 主要功能
 
@@ -41,8 +46,8 @@
 
 | 平台 | 获取方式 |
 |---|---|
-| Windows | [MaQuanIME 0.1.97 安装程序](https://maquan.app/download) |
-| Android | [官网 APK 0.1.97](https://maquan.app/download) |
+| Windows | [MaQuanIME 0.1.98 安装程序](https://maquan.app/download) |
+| Android | [官网 APK 0.1.98](https://maquan.app/download) |
 | Linux | [DEB / RPM 与软件源](https://maquan.app/download) |
 | HarmonyOS | 通过华为应用市场安装；官网与本页不再提供 HAP 下载 —— 鸿蒙生产设备只接受应用市场那条分发链，别处拿到的包会提示来源不可信 |
 | macOS / iOS | 开发中 |
@@ -68,21 +73,21 @@ bash install-maquan-linux.sh
 Fcitx4：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx4-0.1.97-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx4-0.1.98-amd64.deb
 sudo reboot
 ```
 
 IBus：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-IBus-0.1.97-amd64.deb
+sudo apt install ./MaQuanIME-Linux-IBus-0.1.98-amd64.deb
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.97-amd64.deb
+sudo apt install ./MaQuanIME-Linux-Fcitx5-0.1.98-amd64.deb
 sudo reboot
 ```
 
@@ -102,14 +107,14 @@ sudo reboot
 IBus：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-IBus-0.1.97-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-IBus-0.1.98-1.x86_64.rpm
 sudo reboot
 ```
 
 Fcitx5：
 
 ```bash
-sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.97-1.x86_64.rpm
+sudo dnf install ./MaQuanIME-Linux-Fcitx5-0.1.98-1.x86_64.rpm
 sudo reboot
 ```
 
