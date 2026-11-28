@@ -55,6 +55,8 @@
 
 GitHub Releases 提供 Windows 安装程序、Android APK 与 Linux 软件包（含 GPG 签名与校验文件）。HarmonyOS 走华为应用市场，不在此处提供安装包；应用市场专用的 AAB、App Pack 和签名材料同样不会公开上传。
 
+中文用户也可以在 [FossNest](https://fossnest.org/zh-CN/repo/BG5ERH/MaQuanIME) 查看中文介绍与下载镜像（安装包与官方 Release 完全一致）。
+
 ## Linux 安装与卸载
 
 Linux 有三个互斥前端：按当前正在运行的 Fcitx4、Fcitx5 或 IBus 选择，不能只按系统名称或桌面名称猜。Fcitx4 目前只有 DEB。当前包仅支持 x86_64/amd64，最低 glibc 2.28、Fcitx4 4.2.9.6 或 Fcitx5 5.0.21，仍须满足各包依赖。
